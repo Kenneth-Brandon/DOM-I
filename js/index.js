@@ -55,19 +55,20 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navBar = document.querySelectorAll("nav a");
 for (let i = 0; i < navBar.length; i++){
-  navBar[i].innerHTML = siteContent["nav"]["nav-item-" + (i + 1)];
+  navBar[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)];
 };
 
 //CTA text
 
-siteContent["cta"]["h1"] = "Dom<br>Is<br>Awesome";
 const ctaText = document.querySelector(".cta-text h1");
-ctaText.innerHTML = siteContent["cta"]["h1"]
+ctaText.textContent = siteContent["cta"]["h1"]
+siteContent["cta"]["h1"] = "Dom Is Awesome";
+ctaText.style.width = '42%';
 
 //CTA button
 
 const ctaButton = document.querySelector(".cta-text button");
-ctaButton.innerHTML = siteContent["cta"]["button"]
+ctaButton.textContent = siteContent["cta"]["button"]
 
 //CTA image
 
