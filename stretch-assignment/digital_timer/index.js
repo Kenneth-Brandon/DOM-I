@@ -11,3 +11,4 @@ setTimeout(function() {
     .querySelectorAll(".digit")
     .forEach(element => element.classList.add("redDigit"));
 }, 10000);
+//
